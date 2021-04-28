@@ -2,14 +2,16 @@
 
 Implementation of Sort merge join &amp; Hash join from scratch.
 
-Language used : `Python`
+#### Language used : `Python`
 
-Problem Statement : Given M memory blocks and two large relations R(X,Y) and S(Y,Z). Develop iterator for the following operations.
+### Problem Statement
+
+Given M memory blocks and two large relations R(X,Y) and S(Y,Z). Develop iterator for the following operations.
 
 ● SortMerge Join
 
 1. open() - Create sorted sublists for R and S, each of size M blocks.
-2. getnext() - Use 1 block for each sublist and get minimum of R & S. Join this minimum Y value with the other table and return. Check for `B(R)+B(S)<M 2`
+2. getnext() - Use 1 block for each sublist and get minimum of R & S. Join this minimum Y value with the other table and return. Check for B(R)+B(S)<M 2
 3. close() - close all files
 
 ● Hash Join
